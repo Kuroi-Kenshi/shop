@@ -1,0 +1,45 @@
+$gray: #c1d3fe
+
+.goodsList
+    padding: 0 60px
+.goodsTable
+    display: grid
+    grid-template-columns: repeat(auto-fill , 1fr)
+    grid-auto-rows: minmax(30px, auto)
+    grid-template-areas: 'title title title title title' 'id name price amount totalPrice'
+    .title
+        grid-area: title
+        border-bottom: 1px solid $gray
+        h1
+            text-align: center
+    .id
+        grid-area: id
+        border-bottom: 1px solid $gray
+        font-weight: 700
+    .name
+        grid-area: name
+        border-bottom: 1px solid $gray
+        font-weight: 700
+    .price
+        grid-area: price
+        border-bottom: 1px solid $gray
+        font-weight: 700
+    .amount
+        grid-area: amount
+        border-bottom: 1px solid $gray
+        font-weight: 700
+    .totalPrice
+        grid-area: totalPrice
+        border-bottom: 1px solid $gray
+        font-weight: 700
+    .tableItem
+        border-bottom: 1px solid $gray
+        input
+            border-top: none
+            border-left: none
+            border-right: none
+            border-bottom: 1px solid $gray
+            width: 55%
+            height: 100%
+            &:focus
+                outline: none
